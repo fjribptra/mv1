@@ -6,7 +6,7 @@ const section = document.querySelector("section");
 searchButton.addEventListener("click", async function () {
     section.innerHTML = '';
     if(inputSearch.value.length <=0 ) return section.innerHTML += `<p class='error'>Please enter a movie name<p>`
-    await fetch(`http://www.omdbapi.com/?apikey=a683bfcc&t=${inputSearch.value}`)
+    await fetch(`https://www.omdbapi.com/?apikey=a683bfcc&t=${inputSearch.value}`)
     .then((res) => res.json())
     .then((res) => {
         if(res.Response == 'True') {
