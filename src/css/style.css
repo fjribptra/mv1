@@ -1,0 +1,165 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: roboto;
+}
+
+body {
+    background-color: rgb(3, 3, 66);
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+}
+
+.container > h2 {
+    color: #fff;
+    margin-top: 20px;
+}
+
+header {
+    width: 100%;
+    padding: 20px;
+    background: rgb(255,255,140);
+    color: yellow;
+    display: flex;
+}  
+
+header p {
+    font-size: 20px;
+}
+
+nav {
+    width: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    color: black;
+    /* background: rgb(0,0,0); */
+    font-weight: bold;
+    margin-left: 5px;
+}
+
+header nav .one {
+    font-size: 6px;
+}
+
+header nav .two {
+    font-size: 25px;
+}
+
+.search-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    padding: 20px;
+}
+
+.search-container > * {
+    padding: 10px;
+    border: none;
+}
+
+.search-container > input {
+    width: 70vw;
+}
+
+.search-container > button {
+    cursor: pointer;
+    background-color: blue;
+    color: #fff;
+}
+
+/** section css  */
+
+section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 90vw;
+    margin-bottom: 30px;
+}
+
+section .error {
+    font-weight: bold;
+    color: #fff;
+}
+
+section .card {
+    background-color: #fff;
+    padding: 20px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 12px;
+}
+
+section .card .upper {
+    display: flex;
+    gap: 20px;
+}
+
+section .card .image img{
+    width: 9rem;
+    height: 13rem;
+}
+
+section .card .title > * {
+    margin-bottom: 5px;
+}
+
+section .card .title .year {
+    color: #797272;
+}
+
+section .card .title .ratings {
+    color: red;
+    font-weight: bold;
+    text-decoration: underline;
+    font-style: italic;
+}
+
+section .card .title > h6 {
+    font-size: 20px;
+}
+
+section .card .relase {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    gap: 10px;
+}
+
+section .card .relase > * {
+    border: 2px solid blue;
+    padding: 10px;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+
+section .card .button button{
+    cursor: pointer;
+    border: none;
+    padding: 5px;
+    background: rgb(10,50,255);
+    color: rgb(255,255,255);
+}
+
+@media screen and (max-width: 576px) {
+    nav {
+        margin-left: 10px;
+    }
+}
