@@ -1,5 +1,5 @@
 
-# pace-movie-mania 🎬
+# mv1 🎬
 
 Halo semua, ini adalah project web pencari film dengan menggunakan fecth API javascript sederhana dan menggunakan OpenAPI (OMDb API) 
 
